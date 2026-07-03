@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>강서 클럽 모음 블로그 | 강서구 클럽 총정리 찐후기</title>
+    <meta name="description" content="강서 클럽 모음 블로그. 화곡동부터 발산역까지, 강서구 클럽에서 진짜 놀아본 사람의 솔직 후기와 꿀팁 대방출. 전화 010-6279-0862 문의.">
+    <meta name="keywords" content="강서 클럽, 강서 클럽 모음, 강서구 클럽 블로그, 화곡동 클럽 후기, 발산역 클럽 추천, 강서구 밤문화">
+    <link rel="canonical" href="https://t3b08-gs-club-list.vercel.app/blog">
+    <meta property="og:title" content="강서 클럽 모음 블로그 - 찐내돈내산 후기">
+    <meta property="og:description" content="강서구 클럽 다녀본 사람이 전하는 진짜 리뷰. 클럽별 분위기, 음악, 팁까지 싹 다 알려드림.">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #faf8f5;
+            color: #2d2d2d;
+            line-height: 1.7;
+        }
+        a {
+            color: #c73e3a;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #a32e2a;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 16px;
+            border-left: 5px solid #c73e3a;
+            padding-left: 16px;
+            color: #222;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 28px 0 10px;
+            color: #333;
+        }
+        p {
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        nav {
+            background: #1a1a1a;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #eee;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover {
+            color: #ff7b7b;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background: #eee;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .tel-link {
+            background: #c73e3a;
+            color: #fff !important;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .tel-link:hover {
+            background: #a32e2a;
+            color: #fff !important;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #1a1a1a;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 20px 24px;
+                gap: 16px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+            .container { padding: 0 16px; }
+        }
+        .blog-post {
+            padding: 60px 0 80px;
+        }
+        .blog-post .container {
+            max-width: 780px;
+        }
+        .blog-meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0ddd5;
+            padding-bottom: 20px;
+        }
+        .blog-meta span {
+            margin-right: 20px;
+        }
+        .highlight-box {
+            background: #f0ece4;
+            border-left: 4px solid #c73e3a;
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin: 30px 0;
+        }
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        .club-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border: 1px solid #e8e4dc;
+        }
+        .club-card h3 {
+            margin-top: 0;
+            border-left: 3px solid #c73e3a;
+            padding-left: 12px;
+        }
+        .club-card p {
+            margin-bottom: 8px;
+        }
+        .btn-cta {
+            display: inline-block;
+            background: #c73e3a;
+            color: #fff;
+            padding: 12px 32px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .btn-cta:hover {
+            background: #a32e2a;
+            color: #fff;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 32px 0;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ff7b7b;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div style="font-weight:700; color:#fff; font-size:1.2rem;">강서클럽모음</div>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/list">클럽 리스트</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="tel:01062790862" class="tel-link">📞 010-6279-0862</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="blog-post">
+        <div class="container">
+            <h1>강서 클럽 모음 블로그: 내가 직접 겪은 찐후기</h1>
+            <div class="blog-meta">
+                <span>✍️ 강서클럽모음 운영자</span>
+                <span>📅 2025.03.21</span>
+                <span>🔥 조회 1,247</span>
+            </div>
+
+            <p>야, 형들. 나 강서구에서 태어나고 자란 토박이야. 클럽 좀 돌아다닌 지도 10년이 넘었네. 근데 매번 "강서 클럽 모음" 같은 거 검색해도 정작 내가 원하는 정보는 없더라고. 그래서 내가 직접 써본다. <strong>강서 클럽 모음 블로그</strong> – 내 돈 내고 내가 놀고 느낀 그대로만 적을게.</p>
+
+            <div class="highlight-box">
+                <p>💡 <strong>한 줄 요약:</strong> 화곡동은 가성비, 발산역은 분위기, 까치산은 감성. 취향 따라 골라라.</p>
+            </div>
+
+            <h2>1. 화곡동 클럽 – 가성비 끝판왕</h2>
+            <p>화곡동 클럽은 일단 <strong>술값이 착해</strong>. 내가 대학생 때부터 자주 간 동네라 잘 아는데, 요즘도 물가 오른 거랑 다르게 여전히 부담 없어. 초이스나 칵테일 가격이 홍대 대비 70~80% 수준이야. 음악은 주로 EDM과 힙합 반반. 20대 중반부터 30대 초반까지 많이 보이고, 분위기가 확실히 자유로워. 처음 클럽 가는 사람도 적응하기 좋은 곳이 화곡동이야.</p>
+
+            <div class="club-card">
+                <h3>🎵 화곡동 대표 클럽: 비트스테이션</h3>
+                <p><strong>위치:</strong> 화곡동 먹자골목 끝자락</p>
+                <p><strong>입장료:</strong> 주중 무료 / 주말 1만 원 (여성 할인 많음)</p>
+                <p><strong>음악:</strong> EDM 70% + 힙합 30%</p>
+                <p><strong>내 점수:</strong> ⭐⭐⭐⭐ (가성비 갑, 근데 사람 많으면 좀 답답)</p>
+            </div>
+
+            <p>여기 팁 하나 줄게. 화곡동 클럽 갈 때는 <strong>10시 이전에 가라</strong>. 입장료도 싸고 자리도 널널해. 11시 넘어가면 줄 서야 하는 경우도 생겨. 나도 친구랑 10시 반쯤 갔는데 웨이팅 30분 했었음. 미리 가는 게 정신건강에 좋아.</p>
+
+            <h2>2. 발산역 클럽 – 인스타 감성 + 분위기 맛집</h2>
+            <p>발산역 쪽은 확실히 화곡동이랑 달라. <strong>인테리어에 돈 쓴 티가 나</strong>. 조명, 인테리어, 심지어 화장실까지 감성 터짐. 그래서인지 30대 초중반 직장인들이 많이 와. 분위기가 좀 더 성숙하고, 음악도 하우스나 딥하우스 위주로 틀어주는 곳이 많아. 데이트나 소개팅 자리로도 괜찮더라.</p>
+
+            <div class="club-card">
+                <h3>✨ 발산역 핫플: 무드라운지</h3>
+                <p><strong>위치:</strong> 발산역 1번 출구 도보 3분</p>
+                <p><strong>입장료:</strong> 남성 2만 원 / 여성 1만 원 (선착순 무료 이벤트 자주 함)</p>
+                <p><strong>음악:</strong> 하우스, 디스코, 힙합 섞임</p>
+                <p><strong>내 점수:</strong> ⭐⭐⭐⭐⭐ (분위기 최고, 술값 약간 쎔)</p>
+            </div>
+
+            <p>발산역 클럽의 단점은 <strong>술값이 좀 비싸다</strong>는 거. 칵테일 한 잔에 만 오천 원 정도 생각하면 돼. 그래도 가끔은 분위기에 취하고 싶을 때 있잖아? 그럴 땐 여기 강추. 특히 무드라운지는 바텐더가 잘생겼다는 소문이… (내가 확인해줌, 사실임ㅋㅋ)</p>
+
+            <h2>3. 까치산역 클럽 – 홍대 감성 그대로</h2>
+            <p>까치산역은 화곡동이랑 발산역 사이에 있어서 애매한 동네인데, 의외로 클럽 씬이 꽤 활성화되어 있어. 특히 <strong>홍대 감성을 선호하는 사람</strong>한테 딱이야. 인디 음악이나 언더그라운드 힙합을 좋아한다면 여기 클럽들이 더 재밌을 거야. 규모는 작은 편이지만, 오히려 아늑하고 사람들끼리 빨리 친해지는 분위기.</p>
+
+            <div class="highlight-box">
+                <p>🔥 <strong>찐팁:</strong> 까치산 클럽은 주말보다 <strong>수요일이나 목요일</strong>이 더 재밌어. 단골들끼리만 아는 히든 데이. DJ도 더 신나게 틀고 분위기도 더 흥겨움.</p>
+            </div>
+
+            <h2>4. 강서 클럽 모음 – 내가 추천하는 루트</h2>
+            <p>처음 강서구 클럽 투어 간다면? 내가 추천하는 코스 알려줌.</p>
+            <p><strong>1차:</strong> 화곡동에서 가볍게 술 한잔 + 클럽 입장 (비트스테이션 추천)<br>
+            <strong>2차:</strong> 발산역으로 이동해서 무드라운지에서 분위기 전환 (도보 10분, 택시 기본요금)<br>
+            <strong>3차:</strong> 배 터지게 놀고 까치산에서 막국수 or 해장국 (클럽 대신 감성 충전)</p>
+            <p>이 루트면 진짜 하루 만에 강서구 클럽 문화를 다 맛볼 수 있어. 나도 친구들 올 때마다 이 코스로 데리고 다님. 반응 좋음 ㅇㅈ?</p>
+
+            <h2>5. 오늘 밤은 어디로 갈까?</h2>
+            <p>솔직히 말하면, 클럽은 <strong>누구랑 가느냐</strong>가 제일 중요해. 아무리 좋은 클럽 가도 분위기 안 맞으면 노잼이야. 근데 강서구는 동네 특성상 사람들이 좀 더 텐션이 높고 친근한 편이라, 혼자 가도 금방 친해질 수 있어. 나도 몇 번 혼자 갔다가 새로운 인연 만들고 옴.</p>
+
+            <p>마지막으로 꼭 기억해야 할 거. <strong>클럽 가기 전에 전화 한 통</strong> 하면 입장료 할인이나 웨이팅 면제 받을 수 있는 경우가 많아. 아래 번호로 문의하면 친절하게 알려줄 거야. 나도 자주 이용하는 방법임.</p>
+
+            <div style="text-align:center; margin: 40px 0;">
+                <a href="tel:01062790862" class="btn-cta">📞 지금 전화해서 할인 받기</a>
+                <p style="margin-top:12px; color:#888; font-size:0.9rem;">010-6279-0862 (오후 6시 이후 통화 가능)</p>
+            </div>
+
+            <h2>FAQ: 강서 클럽 모음 궁금증 해결</h2>
+            <div style="background:#f5f2ec; border-radius:12px; padding:20px; margin:20px 0;">
+                <p><strong>Q1. 강서구 클럽은 몇 시까지 하나요?</strong><br>
+                보통 새벽 4~5시까지 영업. 주말에는 6시까지 가는 곳도 있어요.</p>
+                <p><strong>Q2. 입장료는 얼마인가요?</strong><br>
+</body>
+</html>
